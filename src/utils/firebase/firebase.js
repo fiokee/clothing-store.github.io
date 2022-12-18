@@ -47,4 +47,5 @@ const firebaseConfig = {
         console.log('there was an error creating user', error.message);
       }
     }
-  }
+    return userDocRef;
+  };
