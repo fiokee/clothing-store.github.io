@@ -20,9 +20,10 @@ const firebaseConfig = {
     prompt: ""
   });
 
-//instantiating
+//instantiating and auth provider
   export const auth = getAuth();
   export const signInWithgooglePopup = ()=> signInWithPopup(auth, provider);
+  // export const signInWithgoogleRedirect = ()=> signInWithRedirect(auth, provider);
 
   // creating the database 
   export const db = getFirestore()
