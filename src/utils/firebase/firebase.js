@@ -14,7 +14,7 @@ const firebaseConfig = {
   // Initialize Firebase
   const firebaseApp = initializeApp(firebaseConfig);
 
-  const provider = new GoogleAuthProvider();
+  const provider = new GoogleAuthProvider()
 
   provider.setCustomParameters({
     prompt: ""
