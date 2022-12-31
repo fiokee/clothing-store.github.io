@@ -20,6 +20,10 @@ const handleChange = (event)=>{
 }
     const handleSubmit = async (event)=>{
         event.preventDefault();
+        if(password != confirmPassword){
+            alert("password do not match");
+            return;
+        }
     }
     return(
         <div>
